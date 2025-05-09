@@ -1,0 +1,11 @@
+# .NET
+bin/
+obj/
+publish/
+*.user
+*.suo
+*.pdb
+
+# Credenziali
+appsettings.json
+*.config
