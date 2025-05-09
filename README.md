@@ -15,25 +15,41 @@ RockTalk è un'applicazione di chat in tempo reale costruita con .NET 8 e Supaba
    ```bash
    git clone https://github.com/your-username/RockTalk.git
    cd RockTalk
-Configura le credenziali Supabase:
 
-Crea un file appsettings.json con Supabase.Url e Supabase.Key.
+## Configura le credenziali Supabase
 
-Compila ed esegui:
+Crea un file `appsettings.json` con le seguenti chiavi:
 
-bash
-Copy code
+```json
+{
+  "Supabase": {
+    "Url": "https://your-project.supabase.co",
+    "Key": "your-anon-or-service-role-key"
+  }
+}
+
+```markdown
+## Compila ed esegui
+
+```bash
 dotnet restore
 dotnet run
-Oppure crea un eseguibile:
+```
 
-bash
-Copy code
+## Oppure crea un eseguibile
+
+```bash
 dotnet publish -c Release -r win-x64 --self-contained true -o ./publish
 .\publish\RockTalk.exe
-Funzionalità
-Messaggistica in tempo reale con Supabase Realtime
-Supporto per broadcast e presence (in sviluppo)
-Interfaccia Windows Forms
-Licenza
+```
+
+## Funzionalità
+
+- Messaggistica in tempo reale con Supabase Realtime  
+- Supporto per broadcast e presence *(in sviluppo)*  
+- Interfaccia Windows Forms  
+
+## Licenza
+
 MIT License
+```
