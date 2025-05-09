@@ -1,5 +1,3 @@
-markdown
-Copy code
 # RockTalk
 
 RockTalk è un'applicazione di chat in tempo reale costruita con .NET 8 e Supabase. Utilizza Windows Forms per l'interfaccia utente e Supabase per la gestione di messaggi, broadcast e presence.
